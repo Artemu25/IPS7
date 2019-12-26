@@ -131,6 +131,30 @@ unsigned int low_level_fragmentation::FindTreeDepth()
 int low_level_fragmentation::ClasifyBox(const min_max_vectors& vects)
 {
 	// необходимо определить функцию
+
+	bool max_cond = true;
+	for (double el:vects.second) {
+		if (el>=0) {
+			max_cond = false;
+			break;
+		}
+	}
+
+	//contain points
+	if (max_cond) return 0;
+
+	bool min_cond = true;
+	for (double el : vects.first) {
+		if (el <= 0) {
+			min_cond = false;
+			break;
+		}
+	}
+
+	if (min_cond) return 1;
+
+	//nor
+	return 2;
 }
 
 //------------------------------------------------------------------------------------------
