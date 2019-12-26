@@ -90,7 +90,11 @@ int main()
 	//CalcInt(a, b, steps_num, false); // Serial
 	CalcInt(a, b, steps_num, true);  // Parallel*/
 
-	double x = -10, y = -10, w = 20, h = 20;
+	double x = -15, y = 0, w = 30, h = 12;
 	high_level_analysis sol(x, y, w, h);
 	sol.GetSolution();
+	
+	const char* file_names[] = {"in.txt", "out.txt", "bound.txt"};
+	
+	WriteResults(file_names);
 }

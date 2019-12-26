@@ -1,12 +1,12 @@
 #include "fragmentation.h"
 
-const double g_l1_max = 10;
-const double g_l2_max = 10;
-const double g_l1_min = 10;
-const double g_l2_min = 10;
-const double g_l0 = 10;
+const double g_l1_max = 12;
+const double g_l2_max = 12;
+const double g_l1_min = 8;
+const double g_l2_min = 8;
+const double g_l0 = 5;
 
-const double g_precision = 0.1;
+const double g_precision = 0.15;
 
 /// вектор, содержащий box-ы, €вл€ющиес€ частью рабочего пространства
  std::vector<Box> solution;
@@ -142,24 +142,30 @@ int low_level_fragmentation::ClasifyBox(const min_max_vectors& vects)
 	// необходимо определить функцию
 
 	bool max_cond = true;
+	std::cout << "max" << std::endl;
 	for (double el:vects.second) {
-		if (el>=0) {
+		std::cout << "class " << el << std::endl;
+		if (el>0) {
 			max_cond = false;
-			break;
+			//break;
 		}
 	}
 
 	//contain points
 	if (max_cond) return 0;
 
-	bool min_cond = true;
+	std::cout << "min" << std::endl;
+	bool min_cond = false;
+	int c = 0;
 	for (double el : vects.first) {
-		if (el <= 0) {
-			min_cond = false;
+		if (el > 0) {
+			std::cout << "class " << el << std::endl;
+			c++;
+			//min_cond = true;
 			break;
 		}
 	}
-
+	if (c > 0) min_cond = true;
 	if (min_cond) return 1;
 
 	//nor
@@ -173,18 +179,22 @@ void low_level_fragmentation::GetBoxType(const Box& box)
 	min_max_vectors verts;
 	GetMinMax(box, verts);
 	int clas = ClasifyBox(verts);
+	//std::cout << "class " << clas << std::endl;
 	switch (clas)
 	{
 	case 0:
-		not_solution.push_back(box);
+		//std::cout << "class " << clas << std::endl;
+		boundary.push_back(box);
 		break;
 
 	case 1:
-		solution.push_back(box);
+		std::cout << "class " << clas << std::endl;
+		not_solution.push_back(box);
 		break;
 
 	case 2:
 		boxes_pair boxes;
+		solution.push_back(box);
 		GetNewBoxes(box, boxes);
 		temporary_boxes.push_back(boxes.first);
 		temporary_boxes.push_back(boxes.second);
@@ -280,9 +290,14 @@ void high_level_analysis::GetSolution()
 	double cur_sigma = current_box.GetDiagonal();
 
 	int tree_depth = FindTreeDepth();
+	//std::cout << "kek " <<  tree_depth <<  std::endl;
 	
+	solution.push_back(current_box);
+	temporary_boxes.push_back(current_box);
+
 	for (int i = 0; i < tree_depth;++i) {
 		std::vector<Box> tmp = temporary_boxes;
+		//std::cout << "Num " << tmp.size() << std::endl;
 		temporary_boxes.clear();
 		for(Box b:tmp)
 		{
@@ -297,4 +312,34 @@ void WriteResults( const char* file_names[] )
 {
 	// необходимо определить функцию
 
+	//in
+	std::ofstream myfile;
+	myfile.open(file_names[0]);
+	for (Box b:solution) {
+		//std::cout << "kek" << std::endl;
+		double x, y, w, h;
+		b.GetParameters(x, y, w, h);
+		myfile << x << ", " << y << ", " << w << ", " << h << ", \n";
+	}
+	myfile.close();
+
+	//out
+	myfile.open(file_names[1]);
+	for (Box b : not_solution) {
+		//std::cout << "kek" << std::endl;
+		double x, y, w, h;
+		b.GetParameters(x, y, w, h);
+		myfile << x << ", " << y << ", " << w << ", " << h << ", \n";
+	}
+	myfile.close();
+
+	//bound
+	myfile.open(file_names[2]);
+	for (Box b : boundary) {
+		//std::cout << "kek" << std::endl;
+		double x, y, w, h;
+		b.GetParameters(x, y, w, h);
+		myfile << x << ", " << y << ", " << w << ", " << h << ", \n";
+	}
+	myfile.close();
 }

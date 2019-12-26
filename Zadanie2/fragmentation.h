@@ -1,6 +1,8 @@
 #pragma once
 #include "box.h"
 #include <vector>
+#include <fstream>
+#include <iostream>
 
 typedef std::pair< std::vector<double>, std::vector<double> > min_max_vectors;
 typedef std::pair<Box, Box> boxes_pair;
