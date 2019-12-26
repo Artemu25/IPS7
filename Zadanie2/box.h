@@ -1,5 +1,6 @@
 #pragma once
 
+
 /// Структура Box описывает конкретный экземпляр box-а
 struct Box
 {

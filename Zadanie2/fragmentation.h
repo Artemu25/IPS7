@@ -6,13 +6,13 @@ typedef std::pair< std::vector<double>, std::vector<double> > min_max_vectors;
 typedef std::pair<Box, Box> boxes_pair;
 
 /// вектор, содержащий box-ы, являющиеся частью рабочего пространства
-std::vector<Box> solution;
+extern std::vector<Box> solution;
 /// вектор, содержащий box-ы, не являющиеся частью рабочего пространства
-std::vector<Box> not_solution;
+extern std::vector<Box> not_solution;
 /// вектор, содержащий box-ы, находящиеся на границе между "рабочим" и "нерабочим" пространством
-std::vector<Box> boundary;
+extern std::vector<Box> boundary;
 /// вектор, хранящий box-ы, анализируемые на следующей итерации алгоритма
-std::vector<Box> temporary_boxes;
+extern std::vector<Box> temporary_boxes;
 
 
 class low_level_fragmentation

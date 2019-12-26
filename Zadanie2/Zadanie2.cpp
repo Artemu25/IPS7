@@ -1,4 +1,4 @@
-#include "pch.h"
+/*
 #include <vector>
 
 
@@ -8,13 +8,15 @@
 #include <locale.h>
 #include <cilk/cilk.h>
 #include <cilk/reducer_opadd.h>
+*/
+//#define _USE_MATH_DEFINES
+//#include <math.h>
 
-#define _USE_MATH_DEFINES
-#include <math.h>
+//#include"fragmentation.h"
 
-using namespace std;
+//using namespace std;
 
-double MyInt(double x) {
+/*double MyInt(double x) {
 	return 6 / sqrt(x * (2 - x));
 }
 
@@ -70,12 +72,15 @@ void elapse_time(double a, double b) {
 		CalcInt(a, b, steps_num, true);
 		cout << endl;
 	}
+	
+}*/
 
-}
+#include "fragmentation.h"
+
 
 int main()
 {
-	double a = 0.5;
+	/*double a = 0.5;
 	double b = 1;
 	cout << "Calc integral from " << a << " to " << b << endl << endl;
 
@@ -83,6 +88,9 @@ int main()
 	// Calculation for fixed number of steps (for tests and inspectation)
 	int steps_num = 4000000;
 	//CalcInt(a, b, steps_num, false); // Serial
-	CalcInt(a, b, steps_num, true);  // Parallel
+	CalcInt(a, b, steps_num, true);  // Parallel*/
 
+	double x = -10, y = -10, w = 20, h = 20;
+	high_level_analysis sol(x, y, w, h);
+	sol.GetSolution();
 }

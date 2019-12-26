@@ -1,12 +1,21 @@
 #include "fragmentation.h"
 
-extern const double g_l1_max;
-extern const double g_l2_max;
-extern const double g_l1_min;
-extern const double g_l2_min;
-extern const double g_l0;
+const double g_l1_max = 10;
+const double g_l2_max = 10;
+const double g_l1_min = 10;
+const double g_l2_min = 10;
+const double g_l0 = 10;
 
-extern const double g_precision;
+const double g_precision = 0.1;
+
+/// вектор, содержащий box-ы, €вл€ющиес€ частью рабочего пространства
+ std::vector<Box> solution;
+/// вектор, содержащий box-ы, не €вл€ющиес€ частью рабочего пространства
+std::vector<Box> not_solution;
+/// вектор, содержащий box-ы, наход€щиес€ на границе между "рабочим" и "нерабочим" пространством
+std::vector<Box> boundary;
+/// вектор, хран€щий box-ы, анализируемые на следующей итерации алгоритма
+std::vector<Box> temporary_boxes;
 
 /// функции gj()
 //------------------------------------------------------------------------------------------
@@ -268,6 +277,18 @@ void high_level_analysis::GetMinMax( const Box& box, min_max_vectors& min_max_ve
 void high_level_analysis::GetSolution()
 {
 	// необходимо определить функцию
+	double cur_sigma = current_box.GetDiagonal();
+
+	int tree_depth = FindTreeDepth();
+	
+	for (int i = 0; i < tree_depth;++i) {
+		std::vector<Box> tmp = temporary_boxes;
+		temporary_boxes.clear();
+		for(Box b:tmp)
+		{
+			GetBoxType(b);
+		}
+	}
 }
 
 
@@ -275,4 +296,5 @@ void high_level_analysis::GetSolution()
 void WriteResults( const char* file_names[] )
 {
 	// необходимо определить функцию
+
 }
