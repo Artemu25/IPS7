@@ -63,12 +63,28 @@ void low_level_fragmentation::VerticalSplitter(const Box& box, boxes_pair& verti
 void low_level_fragmentation::HorizontalSplitter(const Box& box, boxes_pair& horizontal_splitter_pair)
 {
 	// необходимо определить функцию
+	double x, y, w, h;
+	box.GetParameters(x, y, w, h);
+	Box b1 = Box(x, y, w, h/2);
+	Box b2 = Box(x, y + h/2, w, h/2);
+
+	horizontal_splitter_pair.first = b1;
+	horizontal_splitter_pair.second = b2;
 }
 
 //------------------------------------------------------------------------------------------
 void low_level_fragmentation::GetNewBoxes(const Box& box, boxes_pair& new_pair_of_boxes)
 {
 	// необходимо определить функцию
+	double x, y, w, h;
+	box.GetParameters(x, y, w, h);
+	if (w > h) {
+		VerticalSplitter(box, new_pair_of_boxes);
+	}
+	else
+	{
+		HorizontalSplitter(box, new_pair_of_boxes);
+	}
 }
 
 //------------------------------------------------------------------------------------------
