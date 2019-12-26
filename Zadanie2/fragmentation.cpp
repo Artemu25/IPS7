@@ -161,6 +161,26 @@ int low_level_fragmentation::ClasifyBox(const min_max_vectors& vects)
 void low_level_fragmentation::GetBoxType(const Box& box)
 {
 	// необходимо определить функцию
+	min_max_vectors verts;
+	GetMinMax(box, verts);
+	int clas = ClasifyBox(verts);
+	switch (clas)
+	{
+	case 0:
+		not_solution.push_back(box);
+		break;
+
+	case 1:
+		solution.push_back(box);
+		break;
+
+	case 2:
+		boxes_pair boxes;
+		GetNewBoxes(box, boxes);
+		temporary_boxes.push_back(boxes.first);
+		temporary_boxes.push_back(boxes.second);
+		break;
+	}
 }
 
 
