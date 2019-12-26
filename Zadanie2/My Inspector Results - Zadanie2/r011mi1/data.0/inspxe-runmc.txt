@@ -1,0 +1,49 @@
+
+=== Start: [2019/11/29 20:59:42] === 
+Analysis started...
+Result file: D:\GitProjects\Zadanie5\Zadanie2\My Inspector Results - Zadanie2\r011mi1\r011mi1.inspxe 
+Analysis started for d:\gitprojects\zadanie5\release\zadanie2.exe (pid = 19488) 
+Loaded module: d:\gitprojects\zadanie5\release\zadanie2.exe, address range [0xa50000-0xa62fff] 
+Loaded module: c:\windows\syswow64\kernelbase.dll, address range [0x75aa0000-0x75c9bfff], minimal analysis 
+Loaded module: c:\windows\syswow64\kernel32.dll, address range [0x77190000-0x7726ffff], minimal analysis 
+Loaded module: c:\windows\syswow64\ntdll.dll, address range [0x77480000-0x77619fff], minimal analysis 
+Loaded module: d:\intelparallelstudio\inspector 2019\bin32\dnclrprofinfo.dll, address range [0x7a750000-0x7a774fff] 
+Loaded module: c:\windows\syswow64\ucrtbase.dll, address range [0x75040000-0x7515efff] 
+Loaded module: c:\windows\syswow64\msvcp140.dll, address range [0x720b0000-0x7211efff] 
+Loaded module: d:\intelparallelstudio\compilers_and_libraries_2019.5.281\windows\redist\ia32_win\compiler\cilkrts20.dll, address range [0x79580000-0x795c7fff], minimal analysis 
+Loaded module: c:\windows\syswow64\user32.dll, address range [0x76f10000-0x770a6fff], minimal analysis 
+Loaded module: c:\windows\syswow64\win32u.dll, address range [0x770b0000-0x770c6fff] 
+Loaded module: c:\windows\syswow64\gdi32.dll, address range [0x76520000-0x76540fff], minimal analysis 
+Loaded module: c:\windows\syswow64\gdi32full.dll, address range [0x75160000-0x752b9fff], minimal analysis 
+Loaded module: c:\windows\syswow64\msvcp_win.dll, address range [0x74d00000-0x74d7bfff] 
+Loaded module: c:\windows\syswow64\vcruntime140.dll, address range [0x73b30000-0x73b42fff] 
+Loaded module: c:\windows\syswow64\imm32.dll, address range [0x75d10000-0x75d34fff], minimal analysis 
+Loaded module: d:\intelparallelstudio\inspector 2019\bin32\runtime\libittnotify.dll, address range [0x79600000-0x7962cfff], minimal analysis 
+Loaded module: c:\windows\syswow64\guard32.dll, address range [0x74b60000-0x74c19fff] 
+Loaded module: c:\windows\syswow64\advapi32.dll, address range [0x752c0000-0x75338fff], minimal analysis 
+Loaded module: c:\windows\syswow64\msvcrt.dll, address range [0x75360000-0x7541efff], minimal analysis 
+Loaded module: c:\windows\syswow64\sechost.dll, address range [0x75d40000-0x75db5fff] 
+Loaded module: c:\windows\syswow64\rpcrt4.dll, address range [0x75e60000-0x75f1afff], minimal analysis 
+Loaded module: c:\windows\syswow64\sspicli.dll, address range [0x74c50000-0x74c6ffff], minimal analysis 
+Loaded module: c:\windows\syswow64\cryptbase.dll, address range [0x74c40000-0x74c49fff], minimal analysis 
+Loaded module: c:\windows\syswow64\bcryptprimitives.dll, address range [0x77110000-0x7716efff], minimal analysis 
+Loaded module: c:\windows\syswow64\version.dll, address range [0x74c30000-0x74c37fff] 
+Loaded module: c:\windows\syswow64\ole32.dll, address range [0x74f40000-0x75036fff], minimal analysis 
+Loaded module: c:\windows\syswow64\combase.dll, address range [0x76c90000-0x76f05fff], minimal analysis 
+Loaded module: c:\windows\syswow64\fltlib.dll, address range [0x74130000-0x74137fff] 
+Loaded module: c:\windows\syswow64\shell32.dll, address range [0x75f30000-0x764a9fff], minimal analysis 
+Loaded module: c:\windows\syswow64\cfgmgr32.dll, address range [0x770d0000-0x7710afff] 
+Loaded module: c:\windows\syswow64\shcore.dll, address range [0x77270000-0x772f3fff], minimal analysis 
+Loaded module: c:\windows\syswow64\windows.storage.dll, address range [0x765e0000-0x76ba4fff] 
+Loaded module: c:\windows\syswow64\profapi.dll, address range [0x76bb0000-0x76bc6fff] 
+Loaded module: c:\windows\syswow64\powrprof.dll, address range [0x74ef0000-0x74f32fff] 
+Loaded module: c:\windows\syswow64\umpdc.dll, address range [0x75f20000-0x75f2cfff] 
+Loaded module: c:\windows\syswow64\shlwapi.dll, address range [0x764d0000-0x76513fff] 
+Loaded module: c:\windows\syswow64\kernel.appcore.dll, address range [0x75a90000-0x75a9efff] 
+Loaded module: c:\windows\syswow64\cryptsp.dll, address range [0x75cf0000-0x75d02fff] 
+Process d:\gitprojects\zadanie5\release\zadanie2.exe exited with code 0. Leak analysis starting. Please wait... 
+Completed analysis for d:\gitprojects\zadanie5\release\zadanie2.exe 
+Application exit code: 0 
+Result file: D:\GitProjects\Zadanie5\Zadanie2\My Inspector Results - Zadanie2\r011mi1\r011mi1.inspxe 
+Analysis completed
+=== End: [2019/11/29 20:59:51] === 

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippets>
+  <file name="D:\GitProjects\Zadanie5\Zadanie2\Zadanie2.cpp" md5="">
+    <snippet line="181">
+      <line line="178">        const size_t numb_cols = 30;</line>
+      <line line="179"/>
+      <line line="180">        double** matrix = new double*[numb_rows];</line>
+      <line line="181">        for (size_t i = 0; i &lt; numb_rows; ++i)</line>
+      <line line="182">        {</line>
+    </snippet>
+    <snippet line="184">
+      <line line="181">        for (size_t i = 0; i &lt; numb_rows; ++i)</line>
+      <line line="182">        {</line>
+      <line line="183">            matrix[i] = new double[numb_cols];</line>
+      <line line="184">        }</line>
+      <line line="185"/>
+    </snippet>
+    <snippet line="187">
+      <line line="184">        }</line>
+      <line line="185"/>
+      <line line="186">        double* average_vals_in_rows = new double[numb_rows];</line>
+      <line line="187">        double* average_vals_in_cols = new double[numb_cols];</line>
+      <line line="188"/>
+    </snippet>
+    <snippet line="188">
+      <line line="185"/>
+      <line line="186">        double* average_vals_in_rows = new double[numb_rows];</line>
+      <line line="187">        double* average_vals_in_cols = new double[numb_cols];</line>
+      <line line="188"/>
+      <line line="189">        InitMatrix(matrix, numb_rows, numb_cols);</line>
+    </snippet>
+    <snippet line="210">
+      <line line="207">        // Print time</line>
+      <line line="208">        auto duration = std::chrono::duration_cast&lt;std::chrono::microseconds&gt;(end - start);</line>
+      <line line="209">        std::cout &lt;&lt; "Avg time: " &lt;&lt; duration.count() / 1000.0 &lt;&lt; "ms" &lt;&lt; std::endl;</line>
+      <line line="210"/>
+      <line line="211"/>
+    </snippet>
+    <snippet line="213">
+      <line line="210"/>
+      <line line="211"/>
+      <line line="212">        average_vals_in_rows = new double[numb_rows];</line>
+      <line line="213">        average_vals_in_cols = new double[numb_cols];</line>
+      <line line="214"/>
+    </snippet>
+    <snippet line="214">
+      <line line="211"/>
+      <line line="212">        average_vals_in_rows = new double[numb_rows];</line>
+      <line line="213">        average_vals_in_cols = new double[numb_cols];</line>
+      <line line="214"/>
+      <line line="215">        auto parStart = std::chrono::system_clock::now();</line>
+    </snippet>
+    <snippet line="226">
+      <line line="223"/>
+      <line line="224">        auto duration1 = std::chrono::duration_cast&lt;std::chrono::microseconds&gt;(parEnd - parStart);</line>
+      <line line="225">        std::cout &lt;&lt; "Avg time: " &lt;&lt; duration1.count() / 1000.0 &lt;&lt; "ms" &lt;&lt; std::endl;</line>
+      <line line="226"/>
+      <line line="227">    }</line>
+    </snippet>
+  </file>
+  <file name="D:\Visual2017\VC\Tools\MSVC\14.16.27023\include\thr\xthread" md5="">
+    <snippet line="67">
+      <line line="64">inline int _Mtx_initX(_Mtx_t *_Mtx, int _Type)</line>
+      <line line="65">    {    // throw exception on failure</line>
+      <line line="66">    return (_Check_C_return(_Mtx_init(_Mtx, _Type)));</line>
+      <line line="67">    }</line>
+      <line line="68"/>
+    </snippet>
+    <snippet line="92">
+      <line line="89">inline int _Cnd_initX(_Cnd_t *_Cnd)</line>
+      <line line="90">    {    // throw exception on failure</line>
+      <line line="91">    return (_Check_C_return(_Cnd_init(_Cnd)));</line>
+      <line line="92">    }</line>
+      <line line="93"/>
+    </snippet>
+    <snippet line="127">
+      <line line="124">        {    // destroy the object</line>
+      <line line="125">        if (_Active)</line>
+      <line line="126">            _Cnd_destroy(_MyCndp);</line>
+      <line line="127">        }</line>
+      <line line="128"/>
+    </snippet>
+    <snippet line="151">
+      <line line="148">        {    // destroy the object</line>
+      <line line="149">        if (_Active)</line>
+      <line line="150">            _Mtx_destroy(_MyMtxp);</line>
+      <line line="151">        }</line>
+      <line line="152"/>
+    </snippet>
+  </file>
+  <file name="D:\Visual2017\VC\Tools\MSVC\14.16.27023\include\xlocinfo" md5="">
+    <snippet line="79">
+      <line line="76">        if (_Pch == nullptr)</line>
+      <line line="77">            _THROW(runtime_error("bad locale name"));</line>
+      <line line="78">        _Locinfo_ctor(this, _Pch);</line>
+      <line line="79">        }</line>
+      <line line="80"/>
+    </snippet>
+    <snippet line="117">
+      <line line="114">    _Ctypevec __CLR_OR_THIS_CALL _Getctype() const</line>
+      <line line="115">        {    // return ctype stuff</line>
+      <line line="116">        return (::_Getctype());</line>
+      <line line="117">        }</line>
+      <line line="118"/>
+    </snippet>
+  </file>
+  <file name="D:\Visual2017\VC\Tools\MSVC\14.16.27023\include\xutility" md5="">
+    <snippet line="4175">
+      <line line="4172"/>
+      <line line="4173"> #else /* _DEBUG */</line>
+      <line line="4174">            _CSTD free(_Myptr);</line>
+      <line line="4175"> #endif /* _DEBUG */</line>
+      <line line="4176"/>
+    </snippet>
+  </file>
+</snippets>

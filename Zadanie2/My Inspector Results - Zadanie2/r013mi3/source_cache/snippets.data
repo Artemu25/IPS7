@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippets>
+  <file name="D:\GitProjects\Zadanie5\Zadanie2\Zadanie2.cpp" md5="">
+    <snippet line="217">
+      <line line="214"/>
+      <line line="215">        auto duration = std::chrono::duration_cast&lt;std::chrono::microseconds&gt;(end - start);</line>
+      <line line="216">        std::cout &lt;&lt; "Avg time: " &lt;&lt; duration.count() / 1000.0 &lt;&lt; "ms" &lt;&lt; std::endl;</line>
+      <line line="217"/>
+      <line line="218"/>
+    </snippet>
+  </file>
+</snippets>

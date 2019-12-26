@@ -1,0 +1,81 @@
+4928	push esi
+4929	push edi
+4930	push ebx
+4931	sub esp, 0x18
+4934	mov eax, dword ptr [esp+0x2c]
+4938	cmp eax, dword ptr [esp+0x30]
+4942	jnb 0x1439
+4948	mov eax, dword ptr [esp+0x28]
+4952	mov edx, dword ptr [eax+0x8]
+4955	mov ebx, dword ptr [eax+0xc]
+4958	mov ecx, dword ptr [eax]
+4960	mov esi, dword ptr [edx]
+4962	mov edx, dword ptr [eax+0x4]
+4965	mov eax, dword ptr [esp+0x30]
+4969	sub eax, dword ptr [esp+0x2c]
+4973	mov ebx, dword ptr [ebx]
+4975	mov dword ptr [esp+0x10], ecx
+4979	cmp eax, 0x8
+4982	jl 0x1440
+4988	mov edi, ecx
+4990	mov ecx, eax
+4992	mov dword ptr [esp], 0x0
+4999	and ecx, 0xfffffff8
+5002	mov dword ptr [esp+0x8], edx
+5006	movsd xmm1, qword ptr [ebx+edi*8]
+5011	mov edi, dword ptr [esi+edi*4]
+5014	mov dword ptr [esp+0x4], edi
+5018	mov edi, dword ptr [esp+0x2c]
+5022	mov dword ptr [esp+0xc], esi
+5026	unpcklpd xmm1, xmm1
+5030	mov dword ptr [esp+0x14], eax
+5034	lea edi, ptr [edi+edx*1+0x6]
+5038	mov edx, edi
+5040	mov esi, dword ptr [esp+0x4]
+5044	mov edi, dword ptr [esp]
+5047	lea eax, ptr [edx+edi*1]
+5050	add edi, 0x8
+5053	movups xmm2, xmmword ptr [ebx+eax*8]
+5057	movups xmm0, xmmword ptr [esi+eax*8]
+5061	mulpd xmm2, xmm0
+5065	movaps xmm0, xmm1
+5068	subpd xmm0, xmm2
+5072	cmp edi, ecx
+5074	jb 0x13b7
+5076	mov edi, dword ptr [esp+0x10]
+5080	unpckhpd xmm0, xmm0
+5084	mov eax, dword ptr [esp+0x14]
+5088	mov edx, dword ptr [esp+0x8]
+5092	mov esi, dword ptr [esp+0xc]
+5096	movsd qword ptr [ebx+edi*8], xmm0
+5101	lea edi, ptr [ecx+0x1]
+5104	cmp edi, eax
+5106	jnbe 0x1439
+5108	mov edi, dword ptr [esp+0x2c]
+5112	sub eax, ecx
+5114	mov dword ptr [esp], 0x0
+5121	mov dword ptr [esp+0x14], eax
+5125	mov eax, dword ptr [esp]
+5128	add edx, edi
+5130	mov edi, dword ptr [esp+0x10]
+5134	movsd xmm0, qword ptr [ebx+edi*8]
+5139	mov esi, dword ptr [esi+edi*4]
+5142	lea edi, ptr [edx+ecx*1]
+5145	add edi, eax
+5147	inc eax
+5148	movsd xmm1, qword ptr [ebx+edi*8]
+5153	mulsd xmm1, qword ptr [esi+edi*8]
+5158	mov edi, dword ptr [esp+0x10]
+5162	subsd xmm0, xmm1
+5166	movsd qword ptr [ebx+edi*8], xmm0
+5171	cmp eax, dword ptr [esp+0x14]
+5175	jb 0x1416
+5177	add esp, 0x18
+5180	pop ebx
+5181	pop edi
+5182	pop esi
+5183	ret 
+5184	xor ecx, ecx
+5186	jmp 0x13ed
+5188	nop dword ptr [eax+eax*1], eax
+5193	nop dword ptr [eax], eax

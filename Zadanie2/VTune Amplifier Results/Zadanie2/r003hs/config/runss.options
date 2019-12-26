@@ -1,0 +1,15 @@
+-r
+D:\GitProjects\Zadanie6Integral\Zadanie2\VTune Amplifier Results\Zadanie2\r003hs
+--stack-stitching
+--data-limit-mb=1000
+--disk-space-limit=0
+--mrte-type=java,dotnet,python
+--itt-config=frame
+--itt-config=task,event,counter
+--stackwalk=offline
+--mrte-mode=auto
+--type=cpu:counters:nostack
+--type=cpu:stack
+--interval=10
+--
+D:\GitProjects\Zadanie6Integral\Release\Zadanie2.exe

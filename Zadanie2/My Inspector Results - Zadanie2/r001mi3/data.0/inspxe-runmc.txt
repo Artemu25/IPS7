@@ -1,0 +1,81 @@
+
+=== Start: [2019/11/02 20:21:31] === 
+Analysis started...
+Result file: D:\GitProjects\Zadanie2 — копия\Zadanie2\My Inspector Results - Zadanie2\r001mi3\r001mi3.inspxe 
+Analysis started for d:\gitprojects\zadanie2 � �����\release\zadanie2.exe (pid = 15540) 
+Loaded module: d:\gitprojects\zadanie2 — копия\release\zadanie2.exe, address range [0x12e0000-0x12f2fff] 
+Loaded module: c:\windows\syswow64\kernel32.dll, address range [0x739d0000-0x73aaffff] 
+Loaded module: c:\windows\syswow64\kernelbase.dll, address range [0x73ac0000-0x73ca3fff] 
+Loaded module: c:\windows\syswow64\ntdll.dll, address range [0x76fc0000-0x7714ffff] 
+Loaded module: c:\windows\syswow64\ucrtbase.dll, address range [0x73e10000-0x73f2cfff] 
+Loaded module: c:\windows\syswow64\msvcp140.dll, address range [0x6edb0000-0x6ee1efff] 
+Loaded module: c:\windows\syswow64\vcruntime140.dll, address range [0x6ed90000-0x6eda2fff] 
+Loaded module: d:\intelparallelstudio\compilers_and_libraries_2019.5.281\windows\redist\ia32_win\compiler\cilkrts20.dll, address range [0xf080000-0xf0c7fff], minimal analysis 
+Loaded module: c:\windows\syswow64\user32.dll, address range [0x73fe0000-0x7416cfff], minimal analysis 
+Loaded module: c:\windows\syswow64\win32u.dll, address range [0x758e0000-0x758f6fff] 
+Loaded module: c:\windows\syswow64\gdi32.dll, address range [0x73950000-0x73971fff] 
+Loaded module: c:\windows\syswow64\gdi32full.dll, address range [0x76760000-0x768c3fff], minimal analysis 
+Loaded module: c:\windows\syswow64\msvcp_win.dll, address range [0x766e0000-0x7675cfff] 
+Loaded module: c:\windows\syswow64\imm32.dll, address range [0x73f30000-0x73f55fff], minimal analysis 
+Loaded module: d:\intelparallelstudio\inspector 2019\bin32\runtime\libittnotify.dll, address range [0xfcb0000-0xfcdcfff], minimal analysis 
+Loaded module: c:\windows\syswow64\guard32.dll, address range [0x737b0000-0x73869fff] 
+Loaded module: c:\windows\syswow64\advapi32.dll, address range [0x73f60000-0x73fd7fff] 
+Loaded module: c:\windows\syswow64\msvcrt.dll, address range [0x76460000-0x7651efff] 
+Loaded module: c:\windows\syswow64\sechost.dll, address range [0x738f0000-0x73933fff] 
+Loaded module: c:\windows\syswow64\rpcrt4.dll, address range [0x741c0000-0x7427ffff] 
+Loaded module: c:\windows\syswow64\sspicli.dll, address range [0x73880000-0x7389ffff], minimal analysis 
+Loaded module: c:\windows\syswow64\cryptbase.dll, address range [0x73870000-0x73879fff] 
+Loaded module: c:\windows\syswow64\bcryptprimitives.dll, address range [0x74280000-0x742d6fff], minimal analysis 
+Loaded module: c:\windows\syswow64\version.dll, address range [0x737a0000-0x737a7fff] 
+Loaded module: c:\windows\syswow64\ole32.dll, address range [0x757e0000-0x758dbfff] 
+Loaded module: c:\windows\syswow64\combase.dll, address range [0x76960000-0x76bbbfff], minimal analysis 
+Loaded module: c:\windows\syswow64\fltlib.dll, address range [0x75680000-0x75687fff] 
+Loaded module: c:\windows\syswow64\shell32.dll, address range [0x742e0000-0x7562bfff] 
+Loaded module: c:\windows\syswow64\cfgmgr32.dll, address range [0x74170000-0x741a8fff] 
+Loaded module: c:\windows\syswow64\shcore.dll, address range [0x76350000-0x763d7fff], minimal analysis 
+Loaded module: c:\windows\syswow64\windows.storage.dll, address range [0x75d30000-0x762eafff] 
+Loaded module: c:\windows\syswow64\shlwapi.dll, address range [0x75630000-0x75674fff] 
+Loaded module: c:\windows\syswow64\kernel.appcore.dll, address range [0x73ab0000-0x73abefff] 
+Loaded module: c:\windows\syswow64\profapi.dll, address range [0x76520000-0x76537fff] 
+Loaded module: c:\windows\syswow64\powrprof.dll, address range [0x73980000-0x739c4fff] 
+Process d:\gitprojects\zadanie2 � �����\release\zadanie2.exe exited with code 0. Leak analysis starting. Please wait... 
+Unloaded module: D:\GitProjects\Zadanie2 — копия\Release\Zadanie2.exe 
+Unloaded module: C:\Windows\SysWOW64\kernel32.dll 
+Unloaded module: C:\Windows\SysWOW64\KernelBase.dll 
+Unloaded module: C:\Windows\SysWOW64\ntdll.dll 
+Unloaded module: C:\Windows\SysWOW64\ucrtbase.dll 
+Unloaded module: C:\Windows\SysWOW64\msvcp140.dll 
+Unloaded module: C:\Windows\SysWOW64\vcruntime140.dll 
+Unloaded module: D:\IntelParallelStudio\compilers_and_libraries_2019.5.281\windows\redist\ia32_win\compiler\cilkrts20.dll 
+Unloaded module: C:\Windows\SysWOW64\user32.dll 
+Unloaded module: C:\Windows\SysWOW64\win32u.dll 
+Unloaded module: C:\Windows\SysWOW64\gdi32.dll 
+Unloaded module: C:\Windows\SysWOW64\gdi32full.dll 
+Unloaded module: C:\Windows\SysWOW64\msvcp_win.dll 
+Unloaded module: C:\Windows\SysWOW64\imm32.dll 
+Unloaded module: D:\IntelParallelStudio\Inspector 2019\bin32\runtime\libittnotify.dll 
+Unloaded module: C:\Windows\SysWOW64\guard32.dll 
+Unloaded module: C:\Windows\SysWOW64\advapi32.dll 
+Unloaded module: C:\Windows\SysWOW64\msvcrt.dll 
+Unloaded module: C:\Windows\SysWOW64\sechost.dll 
+Unloaded module: C:\Windows\SysWOW64\rpcrt4.dll 
+Unloaded module: C:\Windows\SysWOW64\sspicli.dll 
+Unloaded module: C:\Windows\SysWOW64\cryptbase.dll 
+Unloaded module: C:\Windows\SysWOW64\bcryptprimitives.dll 
+Unloaded module: C:\Windows\SysWOW64\version.dll 
+Unloaded module: C:\Windows\SysWOW64\ole32.dll 
+Unloaded module: C:\Windows\SysWOW64\combase.dll 
+Unloaded module: C:\Windows\SysWOW64\fltLib.dll 
+Unloaded module: C:\Windows\SysWOW64\shell32.dll 
+Unloaded module: C:\Windows\SysWOW64\cfgmgr32.dll 
+Unloaded module: C:\Windows\SysWOW64\SHCore.dll 
+Unloaded module: C:\Windows\SysWOW64\windows.storage.dll 
+Unloaded module: C:\Windows\SysWOW64\shlwapi.dll 
+Unloaded module: C:\Windows\SysWOW64\kernel.appcore.dll 
+Unloaded module: C:\Windows\SysWOW64\profapi.dll 
+Unloaded module: C:\Windows\SysWOW64\powrprof.dll 
+Completed analysis for d:\gitprojects\zadanie2 � �����\release\zadanie2.exe 
+Application exit code: 0 
+Result file: D:\GitProjects\Zadanie2 — копия\Zadanie2\My Inspector Results - Zadanie2\r001mi3\r001mi3.inspxe 
+Analysis completed
+=== End: [2019/11/02 20:22:52] === 

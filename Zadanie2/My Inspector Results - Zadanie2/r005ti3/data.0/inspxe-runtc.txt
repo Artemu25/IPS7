@@ -1,0 +1,83 @@
+
+=== Start: [2019/11/02 20:59:14] === 
+Analysis started...
+Result file: D:\GitProjects\Zadanie2 — копия\Zadanie2\My Inspector Results - Zadanie2\r005ti3\r005ti3.inspxe 
+Found target process d:\gitprojects\zadanie2 — копия\release\zadanie2.exe (PID = 5628). Analysis started... 
+Loaded module: d:\gitprojects\zadanie2 — копия\release\zadanie2.exe. 
+Loaded module: c:\windows\syswow64\kernel32.dll. 
+Loaded module: c:\windows\syswow64\kernelbase.dll. 
+Loaded module: c:\windows\syswow64\ntdll.dll. 
+Loaded module: c:\windows\syswow64\ucrtbase.dll. 
+Loaded module: c:\windows\syswow64\vcruntime140.dll. 
+Loaded module: c:\windows\syswow64\msvcp140.dll. 
+Loaded module: d:\intelparallelstudio\compilers_and_libraries_2019.5.281\windows\redist\ia32_win\compiler\cilkrts20.dll. 
+Unloaded module: d:\intelparallelstudio\compilers_and_libraries_2019.5.281\windows\redist\ia32_win\compiler\cilkrts20.dll. 
+Loaded module: d:\intelparallelstudio\compilers_and_libraries_2019.5.281\windows\redist\ia32_win\compiler\cilkrts20.dll. 
+Loaded module: c:\windows\syswow64\user32.dll. 
+Loaded module: c:\windows\syswow64\win32u.dll. 
+Loaded module: c:\windows\syswow64\gdi32.dll. 
+Loaded module: c:\windows\syswow64\gdi32full.dll. 
+Loaded module: c:\windows\syswow64\msvcp_win.dll. 
+Warning: Inspector does not support the Microsoft Parallel Patterns Library and may report false positives. Refer to the product release notes. 
+Loaded module: c:\windows\syswow64\imm32.dll. 
+Loaded module: d:\intelparallelstudio\inspector 2019\bin32\runtime\libittnotify.dll. 
+Loaded module: c:\windows\syswow64\guard32.dll. 
+Loaded module: c:\windows\syswow64\advapi32.dll. 
+Loaded module: c:\windows\syswow64\msvcrt.dll. 
+Loaded module: c:\windows\syswow64\sechost.dll. 
+Loaded module: c:\windows\syswow64\rpcrt4.dll. 
+Loaded module: c:\windows\syswow64\sspicli.dll. 
+Loaded module: c:\windows\syswow64\cryptbase.dll. 
+Loaded module: c:\windows\syswow64\bcryptprimitives.dll. 
+Loaded module: c:\windows\syswow64\version.dll. 
+Loaded module: c:\windows\syswow64\ole32.dll. 
+Loaded module: c:\windows\syswow64\combase.dll. 
+Loaded module: c:\windows\syswow64\fltlib.dll. 
+Loaded module: c:\windows\syswow64\shell32.dll. 
+Loaded module: c:\windows\syswow64\cfgmgr32.dll. 
+Loaded module: c:\windows\syswow64\shcore.dll. 
+Loaded module: c:\windows\syswow64\windows.storage.dll. 
+Loaded module: c:\windows\syswow64\shlwapi.dll. 
+Loaded module: c:\windows\syswow64\kernel.appcore.dll. 
+Loaded module: c:\windows\syswow64\profapi.dll. 
+Loaded module: c:\windows\syswow64\powrprof.dll. 
+Unloaded module: d:\gitprojects\zadanie2 — копия\release\zadanie2.exe. 
+Unloaded module: c:\windows\syswow64\kernel32.dll. 
+Unloaded module: c:\windows\syswow64\kernelbase.dll. 
+Unloaded module: c:\windows\syswow64\ntdll.dll. 
+Unloaded module: c:\windows\syswow64\ucrtbase.dll. 
+Unloaded module: c:\windows\syswow64\vcruntime140.dll. 
+Unloaded module: c:\windows\syswow64\msvcp140.dll. 
+Unloaded module: d:\intelparallelstudio\compilers_and_libraries_2019.5.281\windows\redist\ia32_win\compiler\cilkrts20.dll. 
+Unloaded module: c:\windows\syswow64\user32.dll. 
+Unloaded module: c:\windows\syswow64\win32u.dll. 
+Unloaded module: c:\windows\syswow64\gdi32.dll. 
+Unloaded module: c:\windows\syswow64\gdi32full.dll. 
+Unloaded module: c:\windows\syswow64\msvcp_win.dll. 
+Unloaded module: c:\windows\syswow64\imm32.dll. 
+Unloaded module: d:\intelparallelstudio\inspector 2019\bin32\runtime\libittnotify.dll. 
+Unloaded module: c:\windows\syswow64\guard32.dll. 
+Unloaded module: c:\windows\syswow64\advapi32.dll. 
+Unloaded module: c:\windows\syswow64\msvcrt.dll. 
+Unloaded module: c:\windows\syswow64\sechost.dll. 
+Unloaded module: c:\windows\syswow64\rpcrt4.dll. 
+Unloaded module: c:\windows\syswow64\sspicli.dll. 
+Unloaded module: c:\windows\syswow64\cryptbase.dll. 
+Unloaded module: c:\windows\syswow64\bcryptprimitives.dll. 
+Unloaded module: c:\windows\syswow64\version.dll. 
+Unloaded module: c:\windows\syswow64\ole32.dll. 
+Unloaded module: c:\windows\syswow64\combase.dll. 
+Unloaded module: c:\windows\syswow64\fltlib.dll. 
+Unloaded module: c:\windows\syswow64\shell32.dll. 
+Unloaded module: c:\windows\syswow64\cfgmgr32.dll. 
+Unloaded module: c:\windows\syswow64\shcore.dll. 
+Unloaded module: c:\windows\syswow64\windows.storage.dll. 
+Unloaded module: c:\windows\syswow64\shlwapi.dll. 
+Unloaded module: c:\windows\syswow64\kernel.appcore.dll. 
+Unloaded module: c:\windows\syswow64\profapi.dll. 
+Unloaded module: c:\windows\syswow64\powrprof.dll. 
+Process d:\gitprojects\zadanie2 — копия\release\zadanie2.exe (PID = 5628) has terminated. 
+Application exit code: 0 
+Result file: D:\GitProjects\Zadanie2 — копия\Zadanie2\My Inspector Results - Zadanie2\r005ti3\r005ti3.inspxe 
+Analysis completed
+=== End: [2019/11/02 21:01:20] === 

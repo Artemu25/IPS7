@@ -1,0 +1,18 @@
+-r
+D:\GitProjects\Zadanie2 — копия\Zadanie2\My Inspector Results - Zadanie2\r000mi3
+--access-checks
+--no-analyze-stack
+--leak-maximum=100000
+--leak-check-on-exit
+--leak-check-on-demand
+--check-resource-leaks
+--leak-check-report-reachable
+--freelist-vol=1000000
+--guard-zone-size=32
+--stack-depth=16
+--no-close-console
+--mrte-mode=auto
+--heartbeat=1
+--enable-memory-growth
+--
+D:\GitProjects\Zadanie2 — копия\Release\Zadanie2.exe

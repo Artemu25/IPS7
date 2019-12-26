@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<diags major="2" minor="0">
+
+<diag id="1">
+	<type description="ThreadStart">233</type>
+	<message>
+		<timestamp>1260353547</timestamp>
+		<thread>
+			<thrname></thrname>
+			<threadid>15844</threadid>
+			<stackstamp>1260422499</stackstamp>
+			<stacktrace>
+			<loc>
+				<mod>d:\gitprojects\zadanie5\release\zadanie2.exe</mod>
+				<rva>0x6f31</rva>
+			</loc>
+			</stacktrace>
+		</thread>
+	</message>
+</diag>
+
+<diag id="2">
+	<type description="ThreadStart">233</type>
+	<message>
+		<timestamp>10401722059</timestamp>
+		<thread>
+			<thrname></thrname>
+			<threadid>9228</threadid>
+			<stackstamp>10401823857</stackstamp>
+			<stacktrace>
+			<loc>
+				<mod>c:\windows\syswow64\kernelbase.dll</mod>
+				<rva>0x199080</rva>
+			</loc>
+			</stacktrace>
+		</thread>
+	</message>
+</diag>

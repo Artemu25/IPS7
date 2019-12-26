@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippets>
+  <file name="D:\Visual2017\VC\Tools\MSVC\14.16.27023\include\thr\xthread" md5="">
+    <snippet line="67">
+      <line line="64">inline int _Mtx_initX(_Mtx_t *_Mtx, int _Type)</line>
+      <line line="65">    {    // throw exception on failure</line>
+      <line line="66">    return (_Check_C_return(_Mtx_init(_Mtx, _Type)));</line>
+      <line line="67">    }</line>
+      <line line="68"/>
+    </snippet>
+    <snippet line="92">
+      <line line="89">inline int _Cnd_initX(_Cnd_t *_Cnd)</line>
+      <line line="90">    {    // throw exception on failure</line>
+      <line line="91">    return (_Check_C_return(_Cnd_init(_Cnd)));</line>
+      <line line="92">    }</line>
+      <line line="93"/>
+    </snippet>
+    <snippet line="127">
+      <line line="124">        {    // destroy the object</line>
+      <line line="125">        if (_Active)</line>
+      <line line="126">            _Cnd_destroy(_MyCndp);</line>
+      <line line="127">        }</line>
+      <line line="128"/>
+    </snippet>
+    <snippet line="151">
+      <line line="148">        {    // destroy the object</line>
+      <line line="149">        if (_Active)</line>
+      <line line="150">            _Mtx_destroy(_MyMtxp);</line>
+      <line line="151">        }</line>
+      <line line="152"/>
+    </snippet>
+  </file>
+  <file name="D:\Visual2017\VC\Tools\MSVC\14.16.27023\include\xlocinfo" md5="">
+    <snippet line="79">
+      <line line="76">        if (_Pch == nullptr)</line>
+      <line line="77">            _THROW(runtime_error("bad locale name"));</line>
+      <line line="78">        _Locinfo_ctor(this, _Pch);</line>
+      <line line="79">        }</line>
+      <line line="80"/>
+    </snippet>
+    <snippet line="117">
+      <line line="114">    _Ctypevec __CLR_OR_THIS_CALL _Getctype() const</line>
+      <line line="115">        {    // return ctype stuff</line>
+      <line line="116">        return (::_Getctype());</line>
+      <line line="117">        }</line>
+      <line line="118"/>
+    </snippet>
+  </file>
+  <file name="D:\Visual2017\VC\Tools\MSVC\14.16.27023\include\xutility" md5="">
+    <snippet line="4175">
+      <line line="4172"/>
+      <line line="4173"> #else /* _DEBUG */</line>
+      <line line="4174">            _CSTD free(_Myptr);</line>
+      <line line="4175"> #endif /* _DEBUG */</line>
+      <line line="4176"/>
+    </snippet>
+  </file>
+</snippets>

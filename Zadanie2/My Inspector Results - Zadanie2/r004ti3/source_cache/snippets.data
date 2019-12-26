@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippets>
+  <file name="D:\GitProjects\Zadanie2 — копия\Zadanie2\Zadanie2.cpp" md5="">
+    <snippet line="126">
+      <line line="123">        //</line>
+      <line line="124">        cilk_for(int j = k + 1; j &lt; rows; ++j)</line>
+      <line line="125">        {</line>
+      <line line="126">            //*par_result += -matrix[k][j] * result[j];</line>
+      <line line="127">            result[k] -= matrix[k][j] * result[j];</line>
+    </snippet>
+    <snippet line="160">
+      <line line="157"/>
+      <line line="158">    // массив решений СЛАУ</line>
+      <line line="159">    double *result = new double[test_matrix_lines];</line>
+      <line line="160"/>
+      <line line="161">    // инициализация тестовой матрицы</line>
+    </snippet>
+  </file>
+</snippets>

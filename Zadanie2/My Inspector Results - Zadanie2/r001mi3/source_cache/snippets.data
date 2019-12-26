@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippets>
+  <file name="D:\GitProjects\Zadanie2 — копия\Zadanie2\Zadanie2.cpp" md5="">
+    <snippet line="113">
+      <line line="110"/>
+      <line line="111">    duration&lt;double&gt; duration = (t2 - t1);</line>
+      <line line="112">    std::cout &lt;&lt; "Duration is: " &lt;&lt; duration.count() &lt;&lt; " seconds" &lt;&lt; std::endl;</line>
+      <line line="113"/>
+      <line line="114">    // обратный ход метода Гаусса</line>
+    </snippet>
+    <snippet line="144">
+      <line line="141">    const int test_matrix_lines = MATRIX_SIZE;</line>
+      <line line="142"/>
+      <line line="143">    double **test_matrix = new double*[test_matrix_lines];</line>
+      <line line="144">    InitMatrix(test_matrix);</line>
+      <line line="145"/>
+    </snippet>
+  </file>
+  <file name="D:\Visual2017\VC\Tools\MSVC\14.16.27023\include\xlocinfo" md5="">
+    <snippet line="79">
+      <line line="76">        if (_Pch == nullptr)</line>
+      <line line="77">            _THROW(runtime_error("bad locale name"));</line>
+      <line line="78">        _Locinfo_ctor(this, _Pch);</line>
+      <line line="79">        }</line>
+      <line line="80"/>
+    </snippet>
+    <snippet line="95">
+      <line line="92">    __CLR_OR_THIS_CALL ~_Locinfo() noexcept</line>
+      <line line="93">        {    // destroy the object</line>
+      <line line="94">        _Locinfo_dtor(this);</line>
+      <line line="95">        }</line>
+      <line line="96"/>
+    </snippet>
+  </file>
+</snippets>
