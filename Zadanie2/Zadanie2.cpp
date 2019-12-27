@@ -96,5 +96,5 @@ int main()
 	
 	const char* file_names[] = {"in.txt", "out.txt", "bound.txt"};
 	
-	WriteResults(file_names);
+	//WriteResults(file_names);
 }

@@ -6,7 +6,7 @@ const double g_l1_min = 8;
 const double g_l2_min = 8;
 const double g_l0 = 5;
 
-const double g_precision = 0.15;
+const double g_precision = 0.5;
 
 /// вектор, содержащий box-ы, являющиеся частью рабочего пространства
  std::vector<Box> solution;
@@ -155,12 +155,12 @@ int low_level_fragmentation::ClasifyBox(const min_max_vectors& vects)
 	if (max_cond) return 0;
 
 	//std::cout << "min" << std::endl;
-	bool min_cond = true;
+	bool min_cond = false;
 	int c = 0;
 	for (double el : vects.first) {
-		if (el <= 0) {
+		if (el > 0) {
 			//std::cout << "class " << el << std::endl;
-			min_cond = false;
+			min_cond = true;
 			break;
 		}
 	}

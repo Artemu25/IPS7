@@ -27,12 +27,12 @@
      <launch type="pointer" type_id="dasID_cctrl2::ApplicationWorkload" ptr_type="dasID_cctrl2::IWorkload">
       <workload>
        <targetName>launch</targetName>
-       <launch_app.app_to_launch>D:\GitProjects\Zadanie6Integral\Release\Zadanie2.exe</launch_app.app_to_launch>
-       <launch_app.working_folder>D:\GitProjects\Zadanie6Integral\Zadanie2\</launch_app.working_folder>
+       <launch_app.app_to_launch>D:\GitProjects\Zadanie7\Release\Zadanie2.exe</launch_app.app_to_launch>
+       <launch_app.working_folder>D:\GitProjects\Zadanie7\Zadanie2\</launch_app.working_folder>
        <launch_app.app_parameters></launch_app.app_parameters>
        <use_app_dir_as_work_dir type="bool">false</use_app_dir_as_work_dir>
        <launch_app.environment></launch_app.environment>
-       <result_directory.path>D:\GitProjects\Zadanie6Integral\Zadanie2\VTune Amplifier Results\Zadanie2\r@@@{at}</result_directory.path>
+       <result_directory.path>D:\GitProjects\Zadanie7\Zadanie2\VTune Amplifier Results\Zadanie2\r@@@{at}</result_directory.path>
        <context>
         <contextValue>
          <id>allowMultipleRuns</id>
