@@ -142,30 +142,29 @@ int low_level_fragmentation::ClasifyBox(const min_max_vectors& vects)
 	// необходимо определить функцию
 
 	bool max_cond = true;
-	std::cout << "max" << std::endl;
+	//std::cout << "max" << std::endl;
 	for (double el:vects.second) {
-		std::cout << "class " << el << std::endl;
+		//std::cout << "class " << el << std::endl;
 		if (el>0) {
 			max_cond = false;
-			//break;
+			break;
 		}
 	}
 
 	//contain points
 	if (max_cond) return 0;
 
-	std::cout << "min" << std::endl;
-	bool min_cond = false;
+	//std::cout << "min" << std::endl;
+	bool min_cond = true;
 	int c = 0;
 	for (double el : vects.first) {
-		if (el > 0) {
-			std::cout << "class " << el << std::endl;
-			c++;
-			//min_cond = true;
+		if (el <= 0) {
+			//std::cout << "class " << el << std::endl;
+			min_cond = false;
 			break;
 		}
 	}
-	if (c > 0) min_cond = true;
+
 	if (min_cond) return 1;
 
 	//nor
@@ -188,7 +187,7 @@ void low_level_fragmentation::GetBoxType(const Box& box)
 		break;
 
 	case 1:
-		std::cout << "class " << clas << std::endl;
+		//std::cout << "class " << clas << std::endl;
 		not_solution.push_back(box);
 		break;
 
